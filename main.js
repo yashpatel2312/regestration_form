@@ -22,22 +22,23 @@ $('#success').hide();
 
 
 fname.addEventListener('blur', () => {
-    console.log("cpassword is blured");
+    console.log("firstname is blured");
     //validate pass here 
     let firstname = fname.value;
-    console.log(firstname);
-    if (firstname == "") {
-        console.log('firstname is blank');
-        fname.classList.add('is-invalid');
-        fname.classList.remove('is-valid');
-        ValidFname = false;
-    } else {
+    let regex = /^[a-zA-Z]([a-zA-Z]){2,20}$/;
+    console.log(firstname,regex);
+    if (regex.test(firstname)) {
         console.log('Your first name is valid');
         fname.classList.remove('is-invalid');
         fname.classList.add('is-valid');
-        validFname = true;
-    }
+        ValidFname = true;
+    } else  {
+        console.log('Your first name is not valid');
+        fname.classList.remove('is-valid');
+        fname.classList.add('is-invalid');
+        ValidFname = false;
 
+    }
 })
 
 lname.addEventListener('blur', () => {
