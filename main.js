@@ -235,8 +235,6 @@ submit.addEventListener('click', (e) => {
         console.log('Phone, email and user are valid. Submitting the form');
         let success = document.getElementById('success');
         success.classList.add('show');
-        // failure.classList.remove('show');
-        // $('#failure').alert('close');
         $('#failure').hide();
         $('#success').show();
 
@@ -245,8 +243,6 @@ submit.addEventListener('click', (e) => {
         console.log('One of Phone, email or user are not valid. Please correct the errors and try again');
         let failure = document.getElementById('failure');
         failure.classList.add('show');
-        // success.classList.remove('show');
-        // $('#success').alert('hide');
         $('#success').hide();
         $('#failure').show();
     }
