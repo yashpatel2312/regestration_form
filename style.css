@@ -1,0 +1,41 @@
+.container {
+    width: 50%;
+}
+
+.pass,
+.nation,
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pass .passW,
+.nationality,
+.finame {
+    width: 40%;
+}
+
+.pass .cpassW,
+.pno,
+.laname {
+    width: 40%;
+}
+
+form {
+width: 600px;
+padding: 15px 20px 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #fff;
+margin: 4% auto;
+}
+body {
+font-size: 16px;
+font-family: system-ui;
+background:-webkit-radial-gradient(top left,red , blue);
+}
+h1{
+    text-align: center;
+    color:#fff;
+}
